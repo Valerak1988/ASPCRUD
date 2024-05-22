@@ -1,0 +1,246 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F722847-2310-49EB-B17E-253D2C1F7923}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HOMEWORKCRUD</RootNamespace>
+    <AssemblyName>HOMEWORKCRUD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44366</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminManager\blank.html" />
+    <Content Include="AdminManager\buttons.html" />
+    <Content Include="AdminManager\CategoryAddEdit.aspx" />
+    <Content Include="AdminManager\CategoryList.aspx" />
+    <Content Include="AdminManager\css\font-awesome\font-awesome.min.css" />
+    <Content Include="AdminManager\css\ltr\bootstrap.min.css" />
+    <Content Include="AdminManager\css\ltr\sb-admin-2.css" />
+    <Content Include="AdminManager\css\plugins\dataTables.bootstrap.css" />
+    <Content Include="AdminManager\css\plugins\metisMenu\metisMenu.css" />
+    <Content Include="AdminManager\css\plugins\metisMenu\metisMenu.min.css" />
+    <Content Include="AdminManager\css\plugins\morris.css" />
+    <Content Include="AdminManager\css\plugins\social-buttons.css" />
+    <Content Include="AdminManager\css\plugins\timeline.css" />
+    <Content Include="AdminManager\css\rtl\bootstrap.min.css" />
+    <Content Include="AdminManager\css\rtl\bootstrap.rtl.css" />
+    <Content Include="AdminManager\css\rtl\sb-admin-2.css" />
+    <Content Include="AdminManager\Default.aspx" />
+    <Content Include="AdminManager\extras\image-samples\buttons.png" />
+    <Content Include="AdminManager\extras\image-samples\tables.png" />
+    <Content Include="AdminManager\extras\image-samples\typography.png" />
+    <Content Include="AdminManager\flot.html" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont-v=4.2.0.svg" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont.svg" />
+    <Content Include="AdminManager\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="AdminManager\forms.html" />
+    <Content Include="AdminManager\grid.html" />
+    <Content Include="AdminManager\images\bootstrap\datatables\sort_asc.png" />
+    <Content Include="AdminManager\images\bootstrap\datatables\sort_asc_disabled.png" />
+    <Content Include="AdminManager\images\bootstrap\datatables\sort_both.png" />
+    <Content Include="AdminManager\images\bootstrap\datatables\sort_desc.png" />
+    <Content Include="AdminManager\images\bootstrap\datatables\sort_desc_disabled.png" />
+    <Content Include="AdminManager\index.html" />
+    <Content Include="AdminManager\js\bootstrap.min.js" />
+    <Content Include="AdminManager\js\bootstrap\bootstrap.min.js" />
+    <Content Include="AdminManager\js\bootstrap\dataTables.bootstrap.min.js" />
+    <Content Include="AdminManager\js\flot\excanvas.min.js" />
+    <Content Include="AdminManager\js\flot\jquery.flot.js" />
+    <Content Include="AdminManager\js\flot\jquery.flot.pie.js" />
+    <Content Include="AdminManager\js\flot\jquery.flot.resize.js" />
+    <Content Include="AdminManager\js\flot\jquery.flot.time.js" />
+    <Content Include="AdminManager\js\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="AdminManager\js\jquery-1.11.0.js" />
+    <Content Include="AdminManager\js\jquery\jquery.dataTables.min.js" />
+    <Content Include="AdminManager\js\jquery\jquery.min.js" />
+    <Content Include="AdminManager\js\metisMenu\metisMenu.min.js" />
+    <Content Include="AdminManager\js\morris\morris.min.js" />
+    <Content Include="AdminManager\js\raphael\raphael.min.js" />
+    <Content Include="AdminManager\js\sb-admin-2.js" />
+    <Content Include="AdminManager\login.html" />
+    <Content Include="AdminManager\morris.html" />
+    <Content Include="AdminManager\notifications.html" />
+    <Content Include="AdminManager\panels-wells.html" />
+    <Content Include="AdminManager\ProdAddEdit.aspx" />
+    <Content Include="AdminManager\ProductList.aspx" />
+    <Content Include="AdminManager\tables.html" />
+    <Content Include="AdminManager\typography.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminManager\BackAdmin.Master.cs">
+      <DependentUpon>BackAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager\BackAdmin.Master.designer.cs">
+      <DependentUpon>BackAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManager\CategoryAddEdit.aspx.cs">
+      <DependentUpon>CategoryAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager\CategoryAddEdit.aspx.designer.cs">
+      <DependentUpon>CategoryAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManager\CategoryList.aspx.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager\CategoryList.aspx.designer.cs">
+      <DependentUpon>CategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManager\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManager\ProdAddEdit.aspx.cs">
+      <DependentUpon>ProdAddEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager\ProdAddEdit.aspx.designer.cs">
+      <DependentUpon>ProdAddEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManager\ProductList.aspx.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManager\ProductList.aspx.designer.cs">
+      <DependentUpon>ProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\BLL\Product.cs" />
+    <Compile Include="App_Code\BLL\Category.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminManager\fonts\fontawesome-webfont-.eot" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont-v=4.2.0.eot" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont-v=4.2.0.ttf" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont-v=4.2.0.woff" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont.eot" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont.ttf" />
+    <Content Include="AdminManager\fonts\fontawesome-webfont.woff" />
+    <Content Include="AdminManager\fonts\FontAwesome.otf" />
+    <Content Include="AdminManager\fonts\glyphicons-halflings-regular-.eot" />
+    <Content Include="AdminManager\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="AdminManager\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="AdminManager\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="AdminManager\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="AdminManager\README.md" />
+    <Content Include="AdminManager\BackAdmin.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="uploads\categories\" />
+    <Folder Include="uploads\product\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>41913</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44366/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
